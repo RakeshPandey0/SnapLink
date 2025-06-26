@@ -11,15 +11,14 @@
       <h1>URL Shortner</h1>
     </header>
 
-    <!-- <nav>
+    <nav>
       <div id="nav-div">
-        <div class="logo"><a href="#">Website</a></div>
+        <div class="logo"><a href="/">Website</a></div>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">AboutUs</a></li>
+          <li><a href="/">Home</a></li>
         </ul>
       </div>
-    </nav> -->
+    </nav>
 
     <main class="page-home">
       <section id="urlForm">
@@ -41,9 +40,9 @@
         <p>URL Generated: <%= shortUrl %></p>
         <% } %>
       </section>
-      <p>To visit sites use: <%= baseUrl %>shortId</p>
       <section id="urls">
         <% if (locals.urls) { %>
+        <p>To visit sites use: <%= baseUrl %>shortId</p>
         <table>
           <thead>
             <th>S. No</th>

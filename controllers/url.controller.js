@@ -32,6 +32,7 @@ async function redirectURL(req, res) {
     { $push: { visitHistory: { timestamp: Date.now() } } }
   );
   const redirectURL = entry.redirectURL;
+  console.log(redirectURL);
   res.redirect(redirectURL);
 }
 
